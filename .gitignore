@@ -1,0 +1,31 @@
+# --- Operational / sensitive: never commit engagement data ---
+*.local
+*-scope.txt
+*-results.txt
+results/
+scope/
+output/
+
+# API keys / secrets (for the optional reputation-check extensions)
+.env
+.env.*
+*.key
+secrets.*
+config.local.*
+
+# --- OS cruft ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Logs / temp ---
+*.log
+tmp/
+*.tmp

@@ -1,0 +1,20 @@
+# Note: run in bash
+
+check() {
+  for tld in com net; do
+    echo -n "checking $1.$tld ... "
+    code=$(curl -s --max-time 10 -o /dev/null -w "%{http_code}" \
+      "https://rdap.verisign.com/$tld/v1/domain/$1.$tld")
+    if [ "$code" = "404" ]; then echo "AVAILABLE"
+    elif [ "$code" = "200" ]; then echo "registered"
+    else echo "? (HTTP $code)"; fi
+    sleep 1
+  done
+}
+
+for name in example-one example-two example-three \
+            example-four example-five example-six \
+            example-seven example-eight example-nine \
+            example-ten; do
+  check "$name"
+done
