@@ -1,4 +1,11 @@
-# Domain Recon
+```
+    ____                        _          ____
+   / __ \____  ____ ___  ____ _(_)___     / __ \___  _________  ____
+  / / / / __ \/ __ `__ \/ __ `/ / __ \   / /_/ / _ \/ ___/ __ \/ __ \
+ / /_/ / /_/ / / / / / / /_/ / / / / /  / _, _/  __/ /__/ /_/ / / / /
+/_____/\____/_/ /_/ /_/\__,_/_/_/ /_/  /_/ |_|\___/\___/\____/_/ /_/
+
+```
 
 A small RDAP-based bulk domain availability checker for vetting candidate
 domains during **authorized** security engagements — e.g. picking phishing-
